@@ -11,4 +11,4 @@ nxos_2 = {
   }
 for device in (nxos_1,nxos_2):
     net_connect = ConnectHandler(**device)
-    print(net_connect.find_prompt())
+    print(net_connect.send_command("show version"))
