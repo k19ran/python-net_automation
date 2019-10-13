@@ -1,0 +1,6 @@
+logging buffered 30000
+no console login
+int gi0/0/1
+desc test1
+int gi0/1/0
+desc test1
