@@ -11,4 +11,8 @@ device1 = {
 
 net_connect = ConnectHandler(**device1)
 print(net_connect.find_prompt())
+output = net_connect.send_config_from_file(config_file="my_changes.txt")
+print(output)
+save_output = net_connect.save_config()
+print(save_output)
 net_connect.disconnect()
