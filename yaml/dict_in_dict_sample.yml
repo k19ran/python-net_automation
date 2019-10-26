@@ -1,0 +1,12 @@
+---
+router1:
+    device_type: cisco_ios
+    ip_addr: 1.1.1.1
+    username: cisco
+    password: cisco
+router2:
+    device_type: junos_ios
+    ip_addr: 1.1.1.2
+    username: root
+    password: root
+

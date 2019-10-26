@@ -1,0 +1,21 @@
+---
+- string
+- sample_string
+- "some text"
+#booleans
+- true
+- True
+- false
+- False
+- on
+- off
+- 'yes'
+- 'no'
+#- |
+#  This is a multine
+#  here to check 
+#  this feature
+- >
+  other way of 
+  representing multi
+  lines
