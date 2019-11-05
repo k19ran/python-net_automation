@@ -1,0 +1,3 @@
+MY_CONSTANT = 3.14
+USERNAME = 'admin'
+PASSWORD = 'admin'
