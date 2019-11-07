@@ -12,7 +12,7 @@ router3 = {
     #session_log = 'my_session.txt'
 }
 router4 = {
-       "host" : 'cisco3.lasthop.io',
+       "host" : 'cisco4.lasthop.io',
        "username" : 'pyclass',
        "password" : password,
        "device_type" : 'cisco_ios',
