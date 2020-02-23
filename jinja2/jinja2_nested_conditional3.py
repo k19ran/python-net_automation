@@ -9,17 +9,13 @@ env = Environment(undefined=StrictUndefined)
 env.loader = FileSystemLoader('.')
 # env.loader = FileSystemLoader([".",'./templates/'])
 
-filename = "bgp_config.j2"
-#with open(filename) as f:
-#    my_template = f.read()
-
-template_vars = {
-    "bgp_as": 22,
-    "router_id": "1.1.1.1",
-    "peer1": "10.20.30.1",
-    "remote_as": 44
+bgp_vars = {
+    "bgp_peer1":True,
+    "peer_ip1":"10.1.1.1",
+    "bgp_policy":True,
 }
+template_file = "nested_cond.j2"
 
-template = env.get_template(filename)
-output = template.render(**template_vars)
+template = env.get_template(template_file)
+output = template.render(**bgp_vars)
 print(output)
