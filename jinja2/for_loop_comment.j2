@@ -1,0 +1,29 @@
+######## Single for loop
+{%- for port_number in range(24) %}
+interface GigabitEthernet0/1/{{ port_number }}
+switchport access vlan 400
+switchport mode access
+!
+{%- endfor %}
+
+######## Nested for loops
+{%- for slot in range(1,4) %}
+  {%- for port_number in range(1,25) %}
+interface GigabitEthernet0/1/{{ port_number }}
+switchport access vlan 400
+switchport mode access
+! {%- endfor %}
+{%- endfor %}
+
+######## Nested for loops
+{%- for port_number in range(1,25) %}
+ {%- if port_number == 10 %}
+interface GigabitEthernet0/1/{{ port_number }}
+switchport access vlan 400
+switchport mode access
+ {%- endif %}
+{%- endfor %}
+
+######## Jinja2 comment
+{# This is a comment in j2 #}
+
